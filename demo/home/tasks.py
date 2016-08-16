@@ -21,7 +21,7 @@ def sendEmail():
 
     server = smtplib.SMTP('smtp.163.com',25)
     server.starttls()
-    server.login(fromaddr, "zjq008040141")
+    server.login(fromaddr, "******")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
